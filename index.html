@@ -6,10 +6,10 @@
 <head>
 
 	<meta charset="utf-8">
-<!--	# App title #		-->	
+<!--	[[1]]	# App title #		-->	
 	<title>Your App Title Here</title>
 	<meta name="description" content="The One-Page Windows Phone 7 App Website Template">
-	<meta name="author" content="Nick Harewood">
+	<meta name="author" content="Nick Harewood: www.space-scape.com/wp7appsite/">
 	<!--[if lt IE 9]>
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
@@ -22,7 +22,7 @@
 	<script type="text/javascript" src="javascripts/plugins/jquery.tweet.js"></script>
 	<script type="text/javascript">
 
-	//	# Twitter Feed Options - see http://tweet.seaofclouds.com/ for details # 
+	//	[[2]]	# Twitter Feed Options - see http://tweet.seaofclouds.com/ for details # 
 		jQuery(function($){
 			$(".tweet").tweet({
 				username: "wp7appsite",
@@ -43,6 +43,40 @@
 	<link rel="stylesheet" href="stylesheets/skeleton.css">
 	<link rel="stylesheet" href="stylesheets/layout.css">
 
+	<style type="text/css">
+
+/* 	[[3]] #Windows Phone App Website Branding Styles */
+
+	/* Text and Background colour */
+	body {
+		color: #000;
+		background-color:#BDBDBD;
+	}
+	
+	/* Header Colours */
+	h1, h2, h3, h4, h5, h6 {color: #333;}
+	
+	/* Link colour */
+	a, a:visited { color: #666;}
+
+	/* Logo */
+	#header #logo h1 {
+		width: 175px;
+		height: 110px;
+		background: transparent url(images/branding/dummylogo.png) no-repeat;
+	}
+
+	/* Strapline colour */
+	#header #strapline p {color: #000;}
+
+	/* App Feature List - define custom feature icons here -  */
+	ul.featurelist li.BulletImage { background-image: url(images/listcircle.png);}
+
+	/* User Review Quote */
+	blockquote.user_quote p {color: #666;}
+
+	</style>
+
 	<link rel="shortcut icon" href="images/branding/favicon.ico">
 
 </head>
@@ -53,12 +87,12 @@
 		<div class="sixteen columns" id="header">
 		
 			<div id="logo" class="four columns alpha">
-<!--	# App title #		-->	
+<!--	[[4]]	# App title #		-->	
 				<h1>Your App Title Here</h1>
 			</div>
 			
 			<div id="strapline" class="six columns omega offset-by-six">
-<!--	# App strapline #		-->	
+<!--	[[5]]	# App strapline #		-->	
 				<p>The One-Page<br/>Windows Phone 7 App<br/>Website Template</p>
 			</div>
 		</div>
@@ -69,26 +103,26 @@
 				<h2>Latest</h2>
 <!--	# Twitter Feed  #		-->	
 				<div class="tweet"></div> 
-<!--	# Twitter Follow Button : Enter your twitter link below #		-->	
+<!--	[[6]]	# Twitter Follow Button : Enter your twitter link below #		-->	
 				<a href="https://twitter.com/wp7appsite" class="twitter-follow-button" data-show-count="false">Follow WP7appSite</a>
 			</div>
 				
 			<div id="phonescreens" class="six columns">
 				<div id="slider">
-<!--	# App Screenshots - Replace items in this list with your own 240x400px Images #		-->	
+<!--	[[7]]	# App Screenshots - Replace items in this list with your own 240x400px Images #		-->	
 					<ul>				
 						<li><img src="images/screenshots/screenshot0.jpg" alt="App Screenshot" /></li>
 						<li><img src="images/screenshots/screenshot1.jpg" alt="App Screenshot" /></li>
 						<li><img src="images/screenshots/screenshot2.jpg" alt="App Screenshot" /></li>
 					</ul>
 				</div>
-<!--	# App Marketplace Link - Find your app on the marketplace and insert the URL below#		-->	
+<!--	[[8]]	# App Marketplace Link - Find your app on the marketplace and insert the URL below#		-->	
 				<p class="downloadlink"><a href="wp7appsite.zip">Download for Windows Phone</a></p>
 			</div>
 			
 			<div id="features" class="six columns omega">
 				<h2>Features</h2>
-<!--	# App Feature List #		-->	
+<!--	[[9]]	# App Feature List #		-->	
 				<ul class="featurelist">				
 					<li class="BulletImage">Responsive, mobile-friendly layout</li>
 					<li class="BulletImage">Fully configurable branding [<a href="http://www.findapad.biz">Example Site</a>]</li>
@@ -97,7 +131,7 @@
 					<li class="BulletImage">Just add your own content!</li>
 					<li class="BulletImage"><a href="wp7appsite.zip">Download Here</a> [225Kb .ZIP]</li>
 				</ul>
-<!--	# User Reviews & Quotes #		-->	
+<!--	[[10]]	# User Reviews & Quotes #		-->	
 				<blockquote class="user_quote">
 					<p>The best (and only) Windows Phone 7 App site template I've ever used!</p>
 					<cite>Nick Harewood, App Designer</cite>
@@ -114,7 +148,7 @@
 
 
 	<script type="text/javascript">
-//	# UserVoice Widget code location
+//	[[11]]	# UserVoice Widget code location
 	  var uvOptions = {};
 	  (function() {
 		var uv = document.createElement('script'); uv.type = 'text/javascript'; uv.async = true;
@@ -122,7 +156,7 @@
 		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(uv, s);
 	  })();
 
-  //	# Screenshot Slider options #		
+//	[[12]]	# Screenshot Slider options #		
 		$(document).ready(function(){	
 			$("#slider").easySlider({
 				auto: true, 

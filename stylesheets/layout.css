@@ -9,52 +9,10 @@
 
 /* Table of Content
 ==================================================
-	#Windows Phone App Website Branding Styles
 	#Site Styles
 	#Page Styles
 	#Media Queries
 	#Font-Face */
-
-/* #Windows Phone App Website Branding Styles
-================================================== */
-	body {
-		color: #000;
-		background-color:#BDBDBD;
-	}
-	
-
-	h1, h2, h3, h4, h5, h6 {
-		color: #333;
-	}
-	
-	a, a:visited { color: #666;}
-
-	/* Header */
-
-		#header #logo h1 {
-			width: 175px;
-			height: 110px;
-			background: transparent url(../images/branding/dummylogo.png) no-repeat;
-		}
-
-		#header #strapline p {
-			color: #000;
-		}
-	
-	/* App Feature List */
-
-		ul.featurelist li {
-			background:transparent url(../images/listcircle.png) no-repeat;
-		}
-		
-		/* App Feature List */
-		ul.featurelist li.BulletImage { background-image: url(../images/listcircle.png);}
-
-	/* User Review Quote */
-	
-	blockquote.user_quote p {
-		color: #666;
-	}
 
 
 /* #Site Styles
@@ -163,8 +121,8 @@
 	ul.featurelist li {
 		line-height: 25px;
 		padding-left: 30px;
+		background:transparent url(../images/listcircle.png) no-repeat;
 	}
-	
 /* Quotes */
 	
 	blockquote.user_quote {
