@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
 <!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
 <!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
@@ -7,13 +7,13 @@
 
 	<meta charset="utf-8">
 <!--	[[1]]	# App title #		-->	
-	<title>Your App Title Here</title>
-	<meta name="description" content="The One-Page Windows Phone 7 App Website Template">
-	<meta name="author" content="Nick Harewood: www.space-scape.com/wp7appsite/">
+	<title>Ride On Time</title>
+	<meta name="description" content="London Bus Time App For Windows Phone">
+	<meta name="author" content="Sani Yusuf: www.saniyusuf.com">
 	<!--[if lt IE 9]>
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
-
+   
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">	
 	
 	<link rel="stylesheet" href="stylesheets/base.min.css">
@@ -27,7 +27,7 @@
 	/* Text and Background colour */
 	body {
 		color: #000;
-		background-color:#BDBDBD;
+		background-color:#004c9a;
 	}
 	
 	/* Header Colours */
@@ -40,15 +40,31 @@
 	#header #logo h1 {
 		width: 175px;
 		height: 110px;
-		background: transparent url(images/branding/dummylogo.png) no-repeat;
+		background: transparent url(images/branding/logo.png) no-repeat;
 	}
 
 	/* Strapline colour */
-	#header #strapline p {color: #000;}
+	#header #strapline p {color: #FFFFFF;}
 
 	/* App Feature List - define custom feature icons here -  */
 	ul.featurelist li.BulletImage { background-image: url(images/listcircle.png);}
+     
+    ul.featurelist li.search{
+    background-image: url(images/search.png);}
+     
+    ul.featurelist li.nearby{
+    background-image: url(images/route.png);}
 
+    ul.featurelist li.award{
+    background-image: url(images/award.png);}
+     
+     ul.featurelist li.settings{
+    background-image: url(images/settings.png);}
+     
+     ul.featurelist li.world{
+    background-image: url(images/world.png);}
+     
+     
 	/* User Review Quote */
 	blockquote.user_quote p {color: #666;}
 
@@ -58,6 +74,37 @@
 
 </head>
 <body>
+    <!-- Facebook Like Button Code-->
+    <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1&appId=702221966471039";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+    <!-- UserVoice JavaScript SDK (only needed once on a page) -->
+<script>(function(){var uv=document.createElement('script');uv.type='text/javascript';uv.async=true;uv.src='//widget.uservoice.com/UITWEle5xt87lVETUY5rpA.js';var s=document.getElementsByTagName('script')[0];s.parentNode.insertBefore(uv,s)})()</script>
+
+<!-- A tab to launch the Classic Widget -->
+<script>
+UserVoice = window.UserVoice || [];
+UserVoice.push(['showTab', 'classic_widget', {
+  mode: 'full',
+  primary_color: '#cc6d00',
+  link_color: '#007dbf',
+  default_mode: 'support',
+  forum_id: 217601,
+  tab_label: 'Contact',
+  tab_color: '#060606',
+  tab_position: 'middle-right',
+  tab_inverted: false
+}]);
+</script>
+
+
 
 	<div id="maincontainer" class="container">
 	
@@ -65,53 +112,61 @@
 		
 			<div id="logo" class="four columns alpha">
 <!--	[[4]]	# App title #		-->	
-				<h1>Your App Title Here</h1>
+				<h1>Ride On Time</h1>
 			</div>
 			
 			<div id="strapline" class="six columns omega offset-by-six">
 <!--	[[5]]	# App strapline #		-->	
-				<p>The One-Page<br/>Windows Phone 7 App<br/>Website Template</p>
+				<p>London Bus Countdown<br/>Application For Windows Phone</p>
 			</div>
 		</div>
 		<br class="clear"/>
 		<div class="sixteen columns" id="contentcontainer">
 		
 			<div class="four columns alpha">
-				<h2>Latest</h2>
+				<h2>Social</h2>
 <!--	# Twitter Feed  #		-->	
 				<div class="tweet"></div> 
 <!--	[[6]]	# Twitter Follow Button : Enter your twitter link below #		-->	
-				<a href="https://twitter.com/wp7appsite" class="twitter-follow-button" data-show-count="false">Follow WP7appSite</a>
+                <span>Follow Developer</span>
+				<a href="https://twitter.com/saniyusuf" class="twitter-follow-button" data-show-count="false">Follow Ride On Time</a>
+                <br/>
+                <span>Like Ride On Time</span>
+                <div class="fb-like" data-href="http://facebook.com/rideontimeapp" data-width="450" data-layout="button_count" data-show-faces="true" data-send="true"></div>
+
 			</div>
 				
 			<div id="phonescreens" class="six columns">
 				<div id="slider">
 <!--	[[7]]	# App Screenshots - Replace items in this list with your own 240x400px Images #		-->	
 					<ul>				
-						<li><img src="images/screenshots/screenshot0.jpg" alt="App Screenshot" /></li>
-						<li><img src="images/screenshots/screenshot1.jpg" alt="App Screenshot" /></li>
-						<li><img src="images/screenshots/screenshot2.jpg" alt="App Screenshot" /></li>
+						<li><img src="images/screenshots/screenshot0.png" alt="App Screenshot" /></li>
+						<li><img src="images/screenshots/screenshot1.png" alt="App Screenshot" /></li>
+                        <li><img src="images/screenshots/screenshot2.png" alt="App Screenshot" /></li>
+						<li><img src="images/screenshots/screenshot3.png" alt="App Screenshot" /></li>
+                        <li><img src="images/screenshots/screenshot4.png" alt="App Screenshot" /></li>
+                        <li><img src="images/screenshots/screenshot5.png" alt="App Screenshot" /></li>
+                        <li><img src="images/screenshots/screenshot6.png" alt="App Screenshot" /></li>
 					</ul>
 				</div>
 <!--	[[8]]	# App Marketplace Link - Find your app on the marketplace and insert the URL below#		-->	
-				<p class="downloadlink"><a href="http://wp7appsite.codeplex.com/">Download for Windows Phone</a></p>
+				<p class="downloadlink"><a href="http://www.windowsphone.com/en-gb/store/app/rot/6d78b5db-523f-4b04-ae75-2b164bb5d897">
+                    Download for Windows Phone</a></p>
 			</div>
 			
 			<div id="features" class="six columns omega">
 				<h2>Features</h2>
 <!--	[[9]]	# App Feature List #		-->	
 				<ul class="featurelist">				
-					<li class="BulletImage">Responsive, mobile-friendly layout</li>
-					<li class="BulletImage">Fully configurable branding [<a href="http://www.findapad.biz">Example Site</a>]</li>
-					<li class="BulletImage">Twitter feed and follow button</li>
-					<li class="BulletImage">Smooth jQuery Screenshot slider</li>
-					<li class="BulletImage">Just add your own content!</li>
-					<li class="BulletImage"><a href="http://wp7appsite.codeplex.com/">Download from CodePlex</a></li>
+					<li class="award">Winner of 2012 Microsoft Windows Phone Incentives programme UK</li>
+					<li class="nearby">Displays nearby stops from current location</li>
+					<li class="settings">Smart UI with black and white background support</li>
+					<li class="search">Powerful search tool for Buses and Stops with suggestions</li>
+					<li class="world">Accurate countdown information for all London Buses and Stops</li>					
 				</ul>
 <!--	[[10]]	# User Reviews & Quotes #		-->	
 				<blockquote class="user_quote">
-					<p>The best (and only) Windows Phone 7 App site template I've ever used!</p>
-					<cite>Nick Harewood, App Designer</cite>
+					<p>Provides you with live and accurate information about all Buses and Stops in London. It even automatically shows you Stops around you.</p>					
 				</blockquote>
 			</div>
 		
@@ -124,18 +179,18 @@
 
 <!--	# Footer #		-->	
 	<div class="container" id="footer">
-		<p><a href="http://wp7appsite.codeplex.com/">WP7 App Site</a> by <a href="http://www.space-scape.com/">Nick Harewood</a></p>
+		<!-- <p><a href="http://wp7appsite.codeplex.com/">WP7 App Site</a> by <a href="http://www.space-scape.com/">Nick Harewood</a></p> -->
 	</div>
 
 	<!-- Load all the JS -->
 	<script type="text/javascript" src="javascripts/jsLoader.js"></script>
 	<script src="//platform.twitter.com/widgets.js" type="text/javascript"></script>
-	<script type="text/javascript">
+	<!-- <script type="text/javascript">
 
 	//	[[2]]	# Twitter Feed Options - see http://tweet.seaofclouds.com/ for details # 
 		jQuery(function($){
 			$(".tweet").tweet({
-				username: "wp7appsite",
+				username: "rideOnTime",
 				join_text: "auto",
 				count: 3,
 				auto_join_text_default: "We said:",
@@ -147,16 +202,18 @@
 			});
 		});
 		
-	</script> 	
+	</script> 	-->
 
 	<script type="text/javascript">
 //	[[11]]	# UserVoice Widget code location
-	  var uvOptions = {};
-	  (function() {
-		var uv = document.createElement('script'); uv.type = 'text/javascript'; uv.async = true;
-		uv.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'widget.uservoice.com/qvvKZGQcHFJyzqfZNPnKA.js';
-		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(uv, s);
-	  })();
+//  var uvOptions = {};
+//	  (function() {
+//		var uv = document.createElement('script'); uv.type = 'text/javascript'; uv.async = true;
+//		uv.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'widget.uservoice.com/qvvKZGQcHFJyzqfZNPnKA.js';
+//		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(uv, s);
+//	  })();
+
+
 
 //	[[12]]	# Screenshot Slider options #		
 		$(document).ready(function(){	

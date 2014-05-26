@@ -27,7 +27,7 @@
 	#header {
 		height: 200px;
 		background:transparent url(../images/headerglow.png) no-repeat 50% 0%;
-		background-size: 100% 200px;
+		background-size: 100% 200px;  
 	}
 	
 
@@ -259,7 +259,7 @@
 		}
 		
 		#header #logo h1 {
-			margin: 40px 0px 0px;;
+			margin: 40px 0px 0px;
 		}
 		
 		#header #strapline p {
